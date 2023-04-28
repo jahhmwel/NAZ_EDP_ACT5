@@ -2,10 +2,6 @@
 
 
 Public Class adminForm
-    Private Sub adminForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim backup As New SaveFileDialog
         backup.InitialDirectory = "C:\"
@@ -37,5 +33,10 @@ Public Class adminForm
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.Hide()
         usersForm.Show()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Me.Hide()
+        reports.Show()
     End Sub
 End Class

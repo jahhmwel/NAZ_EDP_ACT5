@@ -30,6 +30,7 @@ Partial Class adminForm
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -97,7 +98,7 @@ Partial Class adminForm
         Me.Button5.BackColor = System.Drawing.Color.SeaGreen
         Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.Button5.Location = New System.Drawing.Point(314, 299)
+        Me.Button5.Location = New System.Drawing.Point(198, 291)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(187, 60)
         Me.Button5.TabIndex = 10
@@ -116,6 +117,18 @@ Partial Class adminForm
         Me.Button6.Text = "Logout"
         Me.Button6.UseVisualStyleBackColor = False
         '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.DarkGreen
+        Me.Button7.Font = New System.Drawing.Font("Microsoft YaHei", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.Button7.Location = New System.Drawing.Point(421, 291)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(187, 60)
+        Me.Button7.TabIndex = 12
+        Me.Button7.Text = "Reports"
+        Me.Button7.UseVisualStyleBackColor = False
+        '
         'adminForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -123,6 +136,7 @@ Partial Class adminForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -145,4 +159,5 @@ Partial Class adminForm
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
 End Class
